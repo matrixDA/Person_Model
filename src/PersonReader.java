@@ -48,7 +48,7 @@ public class PersonReader {
                 System.out.println();
 
 
-                System.out.print(String.format("%-10s%-15s%-15s%-6s%6s", "ID#", "FirstName", "LastName", "Title", "YOB"));
+                System.out.printf("%-10s%-15s%-15s%-6s%6s", "ID#", "FirstName", "LastName", "Title", "YOB");
                 System.out.print("\n========================================================");
                 String[] fields;
                 for(String l:lines)
@@ -62,7 +62,7 @@ public class PersonReader {
                         lastName = fields[2].trim();
                         title = fields[3].trim();
                         yob = Integer.parseInt(fields[4].trim());
-                        System.out.print(String.format("\n%-10s%-15s%-15s%-6s%6d", id, firstName, lastName, title, yob));
+                        System.out.printf("\n%-10s%-15s%-15s%-6s%6d", id, firstName, lastName, title, yob);
                     }
                     else
                     {
